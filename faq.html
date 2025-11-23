@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<head>
+  <title>FAQ</title>
+  <link rel="stylesheet" href="faq.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html"><div class="logo">ASTRA</div></a>
+
+    <!-- HAMBURGER MENU -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+
+      <li class="dropdown">
+        <a href="about.html">About ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="about.html#mission">Mission</a></li>
+          <li><a href="about.html#team">Team</a></li>
+        </ul>
+      </li>
+
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="download.html">Download</a></li>
+    </ul>
+  </nav>
+  <!-- END OF NAVBAR -->
+
+  <!-- FAQ SECTION -->
+  <main class="faq-page">
+    <section class="faq-hero">
+      <h1>Frequently Asked Questions</h1>
+    </section>
+
+    <section class="faq-list">
+
+      <details class="faq-item" open>
+        <summary>What is ASTRA?</summary>
+        <p>ASTRA is a software concept that tracks satellites and debris, predicts close approaches, and helps assess collision risk in Earth orbit.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>What problem is ASTRA trying to solve?</summary>
+        <p>ASTRA focuses on the growing risk of collisions in crowded orbits, where even one impact can create thousands of debris fragments that threaten other missions.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How does ASTRA track satellites and debris?</summary>
+        <p>ASTRA ingests orbital data, such as catalogs and orbital elements, and uses it to maintain an up to date picture of where satellites and debris are in space.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>What is a conjunction?</summary>
+        <p>A conjunction is a predicted close approach between two objects in orbit, such as a satellite and a piece of debris, where the distance between them becomes small enough to be a concern.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How does ASTRA predict close approaches?</summary>
+        <p>Using orbital models, ASTRA propagates the orbits of objects forward in time and checks for times when their paths pass close to one another.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How does ASTRA estimate collision risk?</summary>
+        <p>ASTRA looks at factors like miss distance, relative speed, and uncertainty in the orbit data to give each event a simple collision risk score.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Does ASTRA actually move satellites?</summary>
+        <p>No. ASTRA does not control satellites directly. It is meant to help human operators decide when a maneuver might be needed and what options are safer.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Where does ASTRA get its data from?</summary>
+        <p>In this school project, ASTRA uses example orbital data and assumed inputs. A real system could use public satellite catalogs and tracking data from sensors.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can ASTRA work with real space agencies in the future?</summary>
+        <p>The current version is a concept and demonstration, but the ideas behind ASTRA are similar to tools that real operators could use to manage collision risk.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Why is space debris such a big issue?</summary>
+        <p>Every piece of debris travels at very high speed. Even a small fragment can damage or destroy a satellite, and collisions can generate more debris that stays in orbit for years.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>What happens if two objects collide in orbit?</summary>
+        <p>A collision can create a cloud of fragments that spread out along the orbit and increase the risk for many other satellites over time.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How is the ASTRA visualization used?</summary>
+        <p>The visualization lets users see orbits, track close approaches over time, and inspect which encounters are more dangerous in a clear, visual way.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Does ASTRA run in real time?</summary>
+        <p>In this project, ASTRA runs on preloaded data and simulated time steps. A real implementation could update more frequently as new tracking data arrives.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Who is ASTRA designed for?</summary>
+        <p>ASTRA is aimed at mission planners, satellite operators, and students who want a clearer view of how conjunctions and collision risks develop in orbit.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Is ASTRA a finished product or a school project?</summary>
+        <p>This version of ASTRA is a student project built to show the concept of automated tracking, prediction, and risk assessment.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>What are some limitations of ASTRA?</summary>
+        <p>ASTRA uses simplified models, limited data, and runs on a small scale compared to real systems. It is meant for learning and demonstration, not for live satellite control.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How does ASTRA help make space more sustainable?</summary>
+        <p>By highlighting risky encounters earlier, ASTRA supports decisions that can avoid collisions and reduce the growth of debris in key orbital regions.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Could ASTRA be expanded in the future?</summary>
+        <p>Yes. Future versions could use more detailed data, better physics models, and closer integration with real mission planning tools.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Do I need any special software to use ASTRA?</summary>
+        <p>For this project, ASTRA is presented as a website with a visualization, so it can be viewed in a modern web browser.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How can I learn more about ASTRA?</summary>
+        <p>You can explore the About page, try the visualization, and read the other pages in this site to see how the system works and what problem it targets.</p>
+      </details>
+
+    </section>
+  </main>
+  <!-- END OF FAQ SECTION -->
+
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="footer-content">
+
+      <div class="footer-left">
+        <h3>ASTRA</h3>
+        <p>Automated Satellite Tracking and Risk Assessment</p>
+        <hr>
+        <p>© 2025 ASTRA Technologies Inc. <br>  All rights reserved.</p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#visualization">Visualization</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <ul class="footer-right">
+        <li><a href="https://github.com/bytepacket/spacedebris" id="github-btn" target="_blank">GITHUB</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">YOUTUBE</a></li>
+        <li><a href="https://x.com/" target="_blank">X</a></li>
+        <li><a href="https://ca.linkedin.com/" target="_blank">LINKEDIN</a></li>
+      </ul>
+
+    </div>
+  </footer>
+
+  <!-- END OF FOOTER -->
+   
+</body>

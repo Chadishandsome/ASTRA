@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<head>
+  <title>HomePage</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html"><div class="logo">ASTRA</div></a>
+
+    <!-- HAMBURGER MENU -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+
+      <li class="dropdown">
+        <a href="about.html">About ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="about.html#mission">Mission</a></li>
+          <li><a href="about.html#team">Team</a></li>
+        </ul>
+      </li>
+
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="download.html">Download</a></li>
+    </ul>
+  </nav>
+  <!-- END OF NAVBAR -->
+
+  <!-- HEADER -->
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Automated Satellite Tracking <br> and Risk Assessment</h1>
+      <p>ASTRA predicts close approaches between satellites and debris so missions can avoid collisions and keep orbits safe.</p>
+      <div class="hero-buttons">
+        <a href="#visualization" class="hero-btn">Try the visualization</a>
+        <a href="about.html" class="hero-btn" id="about-btn">How ASTRA works</a>
+      </div>
+    </div>
+    <div class="hero-scroll-reminder">
+      <p id="downarrow">&#x2B07;</p>
+      <p>Scroll to Explore</p>
+    </div>
+  </section>
+
+  <!-- END OF HEADER -->
+
+  <!-- CAROUSEL -->
+  <section class="carousel" id="carousel">
+
+    <ul class="carousel-header">
+      <li><a href="index.html#caro1">Tracking</a></li>
+      <li><a href="index.html#caro2">Conjunction Detection</a></li>
+      <li><a href="index.html#caro3">Risk Assessment</a></li>
+      <li><a href="index.html#caro4">Avoidance Planning</a></li>
+      <li><a href="index.html#caro5">Space Safety</a></li>
+    </ul>
+
+    <div class="carousel-items">
+
+      <div class="carousel-item" id="caro1">
+        <div class="carousel-item-title">
+          <h3>Tracking</h3>
+          <p><b>Real-Time Orbit Tracking: ASTRA keeps continuous tabs on satellites and debris, updating their positions to maintain a live map of orbital traffic.</b></p>
+        </div>
+      </div>
+
+      <div class="carousel-item" id="caro2">
+        <div class="carousel-item-title">
+          <h3>Conjunction Detection</h3>
+          <p><b>Close-Approach Prediction: The system forecasts when objects will pass dangerously close to one another, often hours or days in advance.</b></p>
+        </div>
+      </div>
+
+      <div class="carousel-item" id="caro3">
+        <div class="carousel-item-title">
+          <h3>Risk Assessment</h3>
+          <p><b>Collision Probability Scoring: Each predicted encounter is analyzed using distance, speed, and uncertainty data to determine its actual risk level.</b></p>
+        </div>
+      </div>
+
+      <div class="carousel-item" id="caro4">
+        <div class="carousel-item-title">
+          <h3>Avoidance Planning</h3>
+          <p><b>Avoidance Strategy Suggestions: When a threat is flagged, ASTRA offers low-impact maneuver options to help satellites avoid collisions safely.</b></p>
+        </div>
+      </div>
+
+      <div class="carousel-item" id="caro5">
+        <div class="carousel-item-title">
+          <h3>Space Safety</h3>
+          <p><b>Keeping Orbits Sustainable By detecting risks early, ASTRA reduces the chance of debris-generating collisions and keeps orbital lanes usable.</b></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- END OF CAROUSEL -->
+
+  <!-- PROPOSAL -->
+  <section class="proposal" id="proposal">
+    <h2>Automated Satellite Tracking and Risk Assessment (ASTRA) – Our Proposal</h2>
+
+    <div class="proposal-grid">
+      <div class="proposal-text">
+        <div class="proposal-text-block">
+          <h3>Context</h3>
+          <p>
+            Earth’s orbit is filling up with active satellites, dead hardware, and debris. Every new
+            launch increases the chance of close approaches that can damage or destroy critical space
+            systems used for communication, GPS, and weather monitoring.
+          </p>
+        </div>
+        
+        <div class="proposal-text-block">
+          <h3>Problem</h3>
+          <p>
+            Operators receive huge amounts of tracking data but have limited time to decide which
+            conjunctions are actually dangerous and which satellites need to maneuver before a
+            collision creates even more debris.
+          </p>
+        </div>
+        
+        <div class="proposal-text-block">
+          <h3>ASTRA’s Idea</h3>
+          <p>
+            ASTRA is a software system that ingests orbital data for satellites and debris, predicts
+            their future positions, and automatically flags high-risk close approaches. It assigns a
+            collision risk score to each event and suggests simple avoidance maneuvers that minimize
+            fuel use and mission impact.
+          </p>
+        </div>
+        
+        <div class="proposal-text-block">
+          <h3>Why It Matters</h3>
+          <p>
+            By reducing the chance of debris-creating collisions, ASTRA helps protect vital space
+            infrastructure and keeps low Earth orbit usable for future science, navigation, and
+            communication missions.
+          </p>
+        </div>
+      </div>
+
+      <div class="proposal-side">
+        <div class="proposal-card">
+          <h4>Project Focus</h4>
+          <p>Preventing satellite collisions in an increasingly crowded orbit.</p>
+        </div>
+
+        <div class="proposal-card">
+          <h4>Key Outputs</h4>
+          <p>Risk scores, flagged conjunctions, and basic avoidance suggestions.</p>
+        </div>
+
+        <div class="proposal-card">
+          <h4>Data Sources</h4>
+          <p>Uses satellite catalogs, debris tracking data, and orbital elements.</p>
+        </div>
+
+        <div class="proposal-card">
+          <h4>Technology Stack</h4>
+          <p>Predictive models, visualization tools, and automated scoring systems.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- END OF PROPOSAL -->
+
+<!-- VISUALIZATION -->
+  <section class="visualization" id="visualization">
+    <div class="visualization-inner">
+
+      <div class="visualization-text">
+        <h2>Interactive Conjunction Visualization</h2>
+        <p>
+          The ASTRA visualization lets you see satellites and debris moving in orbit, forecast
+          close approaches, and inspect collision risk for individual events. It turns raw tracking
+          data into something you can actually explore and understand.
+        </p>
+        <p>
+          Use it to step through time, focus on a specific satellite, and see how different
+          avoidance decisions change the risk around it.
+        </p>
+
+        <a href="about.html" class="hero-btn">Open Visualization</a>
+      </div>
+
+      <div class="visualization-image">
+        <img src="images/visualization.gif" alt="ASTRA visualization preview">
+      </div>
+
+    </div>
+  </section>
+<!-- END OF VISUALIZATION -->
+
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="footer-content">
+
+      <div class="footer-left">
+        <h3>ASTRA</h3>
+        <p>Automated Satellite Tracking and Risk Assessment</p>
+        <hr>
+        <p>© 2025 ASTRA Technologies Inc. <br>  All rights reserved.</p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#visualization">Visualization</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <ul class="footer-right">
+        <li><a href="https://github.com/bytepacket/spacedebris" id="github-btn" target="_blank">GITHUB</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">YOUTUBE</a></li>
+        <li><a href="https://x.com/" target="_blank">X</a></li>
+        <li><a href="https://ca.linkedin.com/" target="_blank">LINKEDIN</a></li>
+      </ul>
+
+    </div>
+  </footer>
+
+  <!-- END OF FOOTER -->
+   
+</body>

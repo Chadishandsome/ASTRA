@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<head>
+  <title>About</title>
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html"><div class="logo">ASTRA</div></a>
+
+    <!-- HAMBURGER MENU -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+
+      <li class="dropdown">
+        <a href="about.html">About ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="about.html#mission">Mission</a></li>
+          <li><a href="about.html#team">Team</a></li>
+        </ul>
+      </li>
+
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="download.html">Download</a></li>
+    </ul>
+  </nav>
+  <!-- END OF NAVBAR -->
+
+  <section class="about">
+    <!-- HERO -->
+    <section class="about-hero" id="mission">
+      <div class="about-hero-text">
+        <h1>Collision Prevention in Orbit</h1>
+        <p>
+          Earth’s orbit is filling up with active satellites and debris. A single collision can
+          create thousands of fragments and trigger a chain reaction that makes key orbits unsafe
+          for communication, navigation, and science missions. ASTRA’s goal is to spot risky
+          encounters early and help operators avoid them.
+        </p>
+      </div>
+      <div class="about-hero-image">
+        <img src="images/visualization.gif" alt="Visualization of satellites and debris in Earth's orbit">
+      </div>
+    </section>
+    <!-- END OF HERO -->
+
+    <!-- PROBLEM SECTION -->
+    <section class="problem-section">
+      <h2>The Problem: Crowded Orbits and Collision Risk</h2>
+      <p>
+        There are now thousands of active satellites and millions of tracked debris fragments in
+        Earth’s orbit, especially in low Earth orbit where megaconstellations like Starlink operate.
+        More objects mean more close approaches and a higher chance of collisions. Scientists like
+        Donald Kessler warned that repeated impacts could lead to a cascade of debris, making some
+        orbits unusable for long periods.
+      </p>
+      <p>
+        Preventing collisions is not just about tracking objects. It also needs good risk evaluation
+        and tools that let people see what is happening in a way they can act on.
+      </p>
+    </section>
+    <!-- END OF PROBLEM SECTION -->
+
+    <!-- THREE SOLUTION STEPS -->
+    <section class="steps-section" id="steps">
+      <h2>ASTRA’s Three Main Approaches</h2>
+      <p class="steps-intro">
+        To reduce collision risk, ASTRA focuses on three connected steps: automated tracking,
+        risk evaluation, and clear visualization for decision-makers.
+      </p>
+
+      <div class="steps-grid">
+
+        <article class="step-card">
+          <h3>1. Automated Satellite Tracking</h3>
+          <p>
+            Use radar, optical sensors, and AI-based algorithms to monitor satellites and debris and
+            keep their orbits updated in near real time. This gives a current, accurate picture of
+            the space environment.
+          </p>
+          <a href="https://isstracker.pl/en" target="_blank">
+            Learn more about tracking
+          </a>
+        </article>
+
+        <article class="step-card">
+          <h3>2. Risk Evaluation &amp; Conjunction Analysis</h3>
+          <p>
+            Predict close approaches between objects, estimate collision probability, and flag the
+            cases that are actually dangerous. This helps operators focus on the few events that
+            really matter instead of thousands of low risk passes.
+          </p>
+          <a href="https://www.esa.int/Safety_Security/Space_Debris" target="_blank">
+            ESA on space debris risk
+          </a>
+        </article>
+
+        <article class="step-card">
+          <h3>3. Visualization &amp; Awareness Tools</h3>
+          <p>
+            Turn raw orbital data into interactive visual tools that show orbits, close approaches,
+            and avoidance options. These views support operators, policymakers, and the public in
+            understanding why certain maneuvers are needed.
+          </p>
+          <a href="visualization.html">
+            Open ASTRA visualization
+          </a>
+        </article>
+
+      </div>
+    </section>
+    <!-- END OF THREE SOLUTION STEPS -->
+
+    <!-- COMPARISON TABLE -->
+    <section class="comparison-section" id="comparison">
+      <h2>Comparing the Three Approaches</h2>
+      <p>
+        Each approach tackles a different part of the collision problem. Together, they form a full
+        workflow from raw data to real decisions.
+      </p>
+
+      <div class="table-wrapper">
+        <table class="solution-table">
+          <thead>
+            <tr>
+              <th>Approach</th>
+              <th>Main Goal</th>
+              <th>Strengths</th>
+              <th>Limitations</th>
+              <th>Example Uses</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Automated Tracking</td>
+              <td>Maintain accurate positions for satellites and debris.</td>
+              <td>Real time updates, large number of objects, better situational awareness.</td>
+              <td>Needs many sensors and stable data sharing, still some uncertainty in orbits.</td>
+              <td>Catalog updates, monitoring megaconstellations, detecting new debris.</td>
+            </tr>
+            <tr>
+              <td>Risk Evaluation &amp; Conjunction Analysis</td>
+              <td>Estimate how likely a close approach will become a collision.</td>
+              <td>Filters thousands of events into a short, prioritized list of risky cases.</td>
+              <td>Depends on data quality, models can be complex to tune and explain.</td>
+              <td>Daily screening, maneuver decision support, reporting to mission control.</td>
+            </tr>
+            <tr>
+              <td>Visualization &amp; Awareness</td>
+              <td>Make collision risk understandable and visible to people.</td>
+              <td>Easy to explain, supports teaching, helps brief stakeholders and the public.</td>
+              <td>Does not replace detailed analysis, needs good underlying data and models.</td>
+              <td>Operator dashboards, educational tools, public outreach and policy talks.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- END OF COMPARISON TABLE -->
+  </section>
+
+  <!-- END OF ABOUT -->
+
+  <!-- TEAM -->
+  <section class="team-section" id="team">
+    <h2>Our Team</h2>
+
+    <div class="team-grid">
+
+      <div class="team-card">
+        <img src="images/Chad.jpg" alt="Chad">
+        <h3>Chad</h3>
+        <p>Lead Developer &amp; System Architect. Focused on data visualization, UI design, and system integration.</p>
+      </div>
+
+      <div class="team-card">
+        <img src="images/Arif.jpg" alt="Arif">
+        <h3>Arif</h3>
+        <p>Research Lead. Responsible for orbital mechanics research, risk modeling, and concept validation.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- END OF TEAM -->
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="footer-content">
+
+      <div class="footer-left">
+        <h3>ASTRA</h3>
+        <p>Automated Satellite Tracking and Risk Assessment</p>
+        <hr>
+        <p>© 2025 ASTRA Technologies Inc. <br>  All rights reserved.</p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Visualization</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <ul class="footer-right">
+        <li><a href="https://github.com/bytepacket/spacedebris" id="github-btn" target="_blank">GITHUB</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">YOUTUBE</a></li>
+        <li><a href="https://x.com/" target="_blank">X</a></li>
+        <li><a href="https://ca.linkedin.com/" target="_blank">LINKEDIN</a></li>
+      </ul>
+
+    </div>
+  </footer>
+
+  <!-- END OF FOOTER -->  
+</body>
